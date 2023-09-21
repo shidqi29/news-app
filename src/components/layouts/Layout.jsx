@@ -7,14 +7,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="container mx-auto">{children}</main>
       <Footer />
     </>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
