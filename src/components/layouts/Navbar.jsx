@@ -78,7 +78,7 @@ const Navbar = () => {
                   </div>
                 </form>
               </div>
-              <label className="swap-rotate swap">
+              <label className="swap swap-rotate">
                 <input type="checkbox" />
                 <div
                   className="swap-on w-7 fill-current"
