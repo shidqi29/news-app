@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto">{children}</main>
+      <main className="container mx-auto flex flex-col items-center">
+        {children}
+      </main>
       <Footer />
     </>
   );

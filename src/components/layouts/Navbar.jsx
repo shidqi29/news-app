@@ -29,8 +29,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="mb-2 w-full bg-base-300 py-2 shadow-sm shadow-current">
-      <div className="drawer">
+    <header className="sticky top-0 z-10 mb-2 w-full bg-base-300 py-2 shadow-sm shadow-current">
+      <div className="drawer drawer-end">
         <input
           id="my-drawer"
           type="checkbox"
@@ -69,16 +69,16 @@ const Navbar = () => {
                 <form>
                   <div className="join">
                     <input
-                      className="input join-item input-bordered input-sm rounded-full lg:input-md focus:outline-none"
+                      className="input join-item input-bordered input-sm hidden rounded-full focus:outline-none lg:block"
                       placeholder="Search news ..."
                     />
-                    <button className="btn btn-neutral join-item btn-sm rounded-r-full lg:btn-md">
+                    <button className="btn btn-neutral join-item btn-sm hidden rounded-r-full lg:block">
                       <PiMagnifyingGlassBold size={28} />
                     </button>
                   </div>
                 </form>
               </div>
-              <label className="swap swap-rotate">
+              <label className="swap-rotate swap">
                 <input type="checkbox" />
                 <div
                   className="swap-on w-7 fill-current"
