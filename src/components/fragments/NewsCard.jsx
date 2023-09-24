@@ -37,7 +37,9 @@ const NewsCard = ({ news }) => {
             </div>
           </div>
           <h2 className="card-title font-bold">
-            <Link to={news.url}>{news.title}</Link>
+            <Link target="_blank" to={news.url}>
+              {news.title}
+            </Link>
           </h2>
           <p>
             {news.description.slice(0, 100)} {"..."}
@@ -54,7 +56,11 @@ const NewsCard = ({ news }) => {
                 <PiBookmarkSimpleBold size={28} />
               )}
             </button>
-            <Link to={news.url} className="btn btn-outline btn-sm">
+            <Link
+              target="_blank"
+              to={news.url}
+              className="btn btn-outline btn-sm"
+            >
               Read More
               <PiArrowRight size={18} />
             </Link>
