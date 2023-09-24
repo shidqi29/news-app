@@ -1,5 +1,5 @@
-import { news } from "../constant/news";
-import NewsCard from "../fragments/NewsCard";
+import { news } from "../components/constant/news";
+import NewsCard from "../components/fragments/NewsCard";
 
 const Home = () => {
   return (
