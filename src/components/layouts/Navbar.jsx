@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {
   PiBookmarksSimpleBold,
+  PiBookmarksSimpleFill,
   PiListBold,
   PiMagnifyingGlassBold,
   PiMoonBold,
@@ -99,10 +100,16 @@ const Navbar = () => {
               </label>
               <div className="tooltip tooltip-bottom" data-tip="Saved News">
                 <NavLink to="/saved" className={isActive}>
-                  <span className="absolute text-xs font-bold">
-                    {savedNews.length}
-                  </span>
-                  <PiBookmarksSimpleBold size={28} />
+                  {savedNews.length > 0 ? (
+                    <div className="indicator">
+                      <span className="badge indicator-item badge-neutral">
+                        {savedNews.length}
+                      </span>
+                      <PiBookmarksSimpleFill size={28} />
+                    </div>
+                  ) : (
+                    <PiBookmarksSimpleBold size={28} />
+                  )}
                 </NavLink>
               </div>
               <div className="tooltip tooltip-bottom" data-tip="Menu">
