@@ -9,11 +9,22 @@ import { formattedDate } from "../../lib/utils";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useSelector, useDispatch } from "react-redux";
+import { saveNews } from "../../redux/slices/newsSlice";
 
 const NewsCard = ({ news }) => {
   const [bookmark, setBookmark] = useState(false);
+
+  const dispatch = useDispatch();
+  const savedNews = useSelector((state) => state.news.data.saved);
+
+  const isNewsSaved = (news) => {
+    return savedNews.some((item) => item.title === news.title);
+  };
+
   const handleBookmark = () => {
     setBookmark((prev) => !prev);
+    dispatch(saveNews(news));
   };
   return (
     <article>
@@ -50,7 +61,7 @@ const NewsCard = ({ news }) => {
               onClick={handleBookmark}
               className="btn btn-ghost btn-sm p-0"
             >
-              {bookmark ? (
+              {isNewsSaved(news) ? (
                 <PiBookmarkSimpleFill size={28} />
               ) : (
                 <PiBookmarkSimpleBold size={28} />

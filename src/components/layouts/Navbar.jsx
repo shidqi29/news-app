@@ -10,9 +10,11 @@ import {
 import { useEffect, useState } from "react";
 import { themeChange } from "theme-change";
 import { navItem } from "../constant";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const savedNews = useSelector((state) => state.news.data.saved);
 
   const isActive = ({ isActive }) => {
     return isActive
@@ -78,7 +80,7 @@ const Navbar = () => {
                   </div>
                 </form>
               </div>
-              <label className="swap-rotate swap">
+              <label className="swap swap-rotate">
                 <input type="checkbox" />
                 <div
                   className="swap-on w-7 fill-current"
@@ -97,6 +99,9 @@ const Navbar = () => {
               </label>
               <div className="tooltip tooltip-bottom" data-tip="Saved News">
                 <NavLink to="/saved" className={isActive}>
+                  <span className="absolute text-xs font-bold">
+                    {savedNews.length}
+                  </span>
                   <PiBookmarksSimpleBold size={28} />
                 </NavLink>
               </div>
