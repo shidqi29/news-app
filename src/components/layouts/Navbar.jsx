@@ -39,6 +39,7 @@ const Navbar = () => {
           type="checkbox"
           className="drawer-toggle"
           checked={isDrawerOpen}
+          readOnly
         />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
