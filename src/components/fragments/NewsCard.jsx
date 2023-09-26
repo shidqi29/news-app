@@ -6,14 +6,12 @@ import {
   PiUser,
 } from "react-icons/pi";
 import { formattedDate } from "../../lib/utils";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useSelector, useDispatch } from "react-redux";
 import { saveNews } from "../../redux/slices/newsSlice";
 
 const NewsCard = ({ news }) => {
-  const [bookmark, setBookmark] = useState(false);
 
   const dispatch = useDispatch();
   const savedNews = useSelector((state) => state.news.data.saved);
@@ -23,7 +21,6 @@ const NewsCard = ({ news }) => {
   };
 
   const handleBookmark = () => {
-    setBookmark((prev) => !prev);
     dispatch(saveNews(news));
   };
   return (
