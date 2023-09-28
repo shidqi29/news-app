@@ -9,5 +9,6 @@ export const useFetchData = (url) => {
       return response.data;
     },
     keepPreviousData: true,
+    staleTime: Infinity,
   });
 };
