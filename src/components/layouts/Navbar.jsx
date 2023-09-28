@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className="flex-1">
               <div className="hidden w-full lg:flex">
                 <div className="w-full">
-                  <ul className="tabs justify-center">
+                  <ul className="tabs ml-10">
                     <li className="flex gap-4">
                       {navItem.map((item, index) => (
                         <NavLink
