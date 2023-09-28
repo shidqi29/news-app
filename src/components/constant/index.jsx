@@ -15,10 +15,11 @@ export const navItem = [
 
 const baseUrl = import.meta.env.VITE_BASE_URL;
 const apiKey = import.meta.env.VITE_API_KEY;
+const apiKey2 = import.meta.env.VITE_API_KEY_2;
 const pageSize = 10;
 
 export const apiUrl = {
-  indonesia: `${baseUrl}/top-headlines?country=id&pageSize=${pageSize}&apiKey=${apiKey}`,
-  programming: `${baseUrl}/everything?q=programming&pageSize=${pageSize}&apiKey=${apiKey}`,
-  covid: `${baseUrl}/everything?q=covid&pageSize=${pageSize}&apiKey=${apiKey}`,
+  indonesia: `${baseUrl}/top-headlines?country=id&pageSize=${pageSize}&apiKey=${apiKey2}`,
+  programming: `${baseUrl}/everything?q=programming&pageSize=${pageSize}&apiKey=${apiKey2}`,
+  health: `${baseUrl}/everything?q=health&pageSize=${pageSize}&apiKey=${apiKey2}`,
 };

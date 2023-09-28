@@ -1,119 +1,244 @@
-export const news = [
-  {
-    source: {
-      id: "bbc-news",
-      name: "BBC News",
+export const news = {
+  articles: [
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Vietnam jails fifth climate activist in worrying trend",
+      description:
+        "Human rights groups say there is a worrying trend of activists being arrested on tax evasion charges.",
+      url: "http://www.bbc.co.uk/news/world-asia-66940762",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/40DF/production/_131270661_hongthminhhng2017-fromfbhh.jpg",
+      publishedAt: "2023-09-28T07:37:18.4641409Z",
+      content:
+        "One of Vietnam's best-known climate activists has been sentenced to three years in prison over tax evasion. \r\nHoang Thi Minh Hong is the fifth Vietnamese activist to be jailed over the charge. \r\nCamp… [+6079 chars]",
     },
-    author: "BBC News",
-    title: "French rapper MHD gets 12 years in jail for murder",
-    description:
-      'MHD, a pioneer of "Afro trap" music, was tried for the gang murder of a young man in Paris in 2018.',
-    url: "http://www.bbc.co.uk/news/world-europe-66904274",
-    urlToImage:
-      "https://ichef.bbci.co.uk/news/1024/branded_news/2C81/production/_131239311_gettyimages-634606806.jpg",
-    publishedAt: "2023-09-24T00:52:12.3027838Z",
-    content:
-      "French rapper MHD has been given a 12-year jail term for the murder of a young man in Paris in 2018.\r\nA court in the capital found the 29-year-old MHD, real name Mohamed Sylla, guilty of involvement … [+1267 chars]",
-  },
-  {
-    source: {
-      id: null,
-      name: "Slashdot.org",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Evergrande shares halted as pressure mounts on firm",
+      description:
+        "The stricken Chinese property giant suspends shares as reports emerge of its chairman being taken.",
+      url: "http://www.bbc.co.uk/news/business-66932548",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/130DF/production/_131274087_gettyimages-1342296605.jpg",
+      publishedAt: "2023-09-28T07:37:18.198582Z",
+      content:
+        "Shares in crisis-hit Chinese property giant Evergrande have been suspended in Hong Kong amid reports its chairman has been placed under police surveillance.\r\nIt follows reports earlier this week that… [+2758 chars]",
     },
-    author: "msmash",
-    title:
-      "First Bitcoin ETF Could Be Coming Soon as Court Rules in Favor of Grayscale Over SEC",
-    description:
-      "The U.S. Court of Appeals for the D.C. Circuit has paved the way for bitcoin exchange-traded funds. From a report: On Tuesday, the court sided with Grayscale in a lawsuit against the Securities and Exchange Commission which had denied the company's applicatio…",
-    url: "https://slashdot.org/story/23/08/29/1816233/first-bitcoin-etf-could-be-coming-soon-as-court-rules-in-favor-of-grayscale-over-sec",
-    urlToImage: "https://a.fsdn.com/sd/topics/bitcoin_64.png",
-    publishedAt: "2023-08-29T19:20:00Z",
-    content:
-      "On Tuesday, the court sided with Grayscale in a lawsuit against the Securities and Exchange Commission which had denied the company's application to convert the Grayscale Bitcoin Trust to an ETF. The… [+1393 chars]",
-  },
-  {
-    source: {
-      id: "business-insider",
-      name: "Business Insider",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "NFL's Travis Kelce breaks silence on 'amazing' Taylor Swift",
+      description:
+        'The sports star says his rumoured love interest\'s appearance at his game on Sunday was "awesome".',
+      url: "http://www.bbc.co.uk/news/world-us-canada-66940478",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/1095F/production/_131253976_taylor_swift_clip.jpg",
+      publishedAt: "2023-09-28T07:37:17.8549173Z",
+      content:
+        'NFL star Travis Kelce has lavished praise on his rumoured love interest, Taylor Swift, for her internet-breaking appearance at his game last Sunday. \r\n"Shout out to Taylor for showing up," Kelce, 33,… [+2863 chars]',
     },
-    author: "Phil Rosen",
-    title:
-      "'You made it through winter': Anthony Scaramucci shares 3 reasons why he's still bullish on bitcoin",
-    description:
-      '"Every single Wall Street firm is going to have a bitcoin ETF in their arsenal," the Skybridge Capital founder told attendees at Messari Mainnet.',
-    url: "https://markets.businessinsider.com/news/currencies/anthony-scaramucci-bitcoin-outlook-skybridge-capital-crypto-messari-mainnet-conference-2023-9",
-    urlToImage:
-      "https://i.insider.com/650b62ed12dc4f001a176ecb?width=1200&format=jpeg",
-    publishedAt: "2023-09-21T14:05:00Z",
-    content:
-      'Anthony Scaramucci at Messari Mainnet, 2023.Phil Rosen/Insider\r\n<ul>\n<li>Anthony Scaramucci believes the next decade will be "remarkably bullish" for bitcoin.</li>\n<li>At the Messari Mainnet conferen… [+2015 chars]',
-  },
-  {
-    source: {
-      id: "business-insider",
-      name: "Business Insider",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Haikun: Taiwan unveils new submarine to fend off China",
+      description:
+        "Named after a mythical massive fish, the Haikun is Taiwan's first domestically made submarine.",
+      url: "http://www.bbc.co.uk/news/world-asia-66932808",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/92A1/production/_131273573_gettyimages-1694415331.jpg",
+      publishedAt: "2023-09-28T07:37:16.9801354Z",
+      content:
+        "Media caption, Watch: Taiwan unveils first domestically-built submarine\r\nTaiwan has unveiled its first domestically-made submarine as it bolsters its defences against a possible Chinese attack.\r\nPres… [+6412 chars]",
     },
-    author: "Phil Rosen",
-    title:
-      "Bitcoin just had its 2nd-straight losing month as crypto sold off in August along with stocks and bonds",
-    description:
-      "The world's biggest cryptocurrency failed to eke out a gain in August even as crypto investors cheered Grayscale's win over the SEC.",
-    url: "https://markets.businessinsider.com/news/currencies/bitcoin-price-crypto-token-august-stocks-bonds-equities-markets-investors-2023-9",
-    urlToImage:
-      "https://i.insider.com/64f217441e6afd00196a380f?width=1200&format=jpeg",
-    publishedAt: "2023-09-01T17:42:25Z",
-    content:
-      "bitcoin cryptocurrency digital currencyEdward Smith/Getty Images\r\n<ul>\n<li>Bitcoin finished August about 10% lower, its second consecutive losing month. </li>\n<li>Crypto was caught up in a tough sell… [+2148 chars]",
-  },
-  {
-    source: {
-      id: "business-insider",
-      name: "Business Insider",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "BBC helps free suspected migrants stuck in refrigerated lorry",
+      description:
+        "A woman spoke to us from inside the lorry in France, saying she was struggling to breathe.",
+      url: "http://www.bbc.co.uk/news/world-asia-66943779",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/46D9/production/_131273181_pic.jpg",
+      publishedAt: "2023-09-28T04:52:20.3556542Z",
+      content:
+        "Six suspected migrants have been rescued from the back of a lorry in France, after the BBC helped track them down and alert the police.\r\nThe four Vietnamese women and two Iraqi women were trapped ins… [+5307 chars]",
     },
-    author: "Zahra Tayeb",
-    title:
-      "About 200 million people trade bitcoin – but only 6 are billionaires",
-    description:
-      "The findings from the Henley & Partners' Crypto Wealth Report come as bitcoin struggles to maintain its 2023 rally.",
-    url: "https://markets.businessinsider.com/news/currencies/crypto-wealth-six-bitcoin-billionaires-globally-2023-9",
-    urlToImage:
-      "https://i.insider.com/6418595ffa3bcb001907f72c?width=1200&format=jpeg",
-    publishedAt: "2023-09-07T08:11:22Z",
-    content:
-      "Bitcoin is up about 55% this year.Getty Images\r\n<ul>\n<li>Of about 200 people globally who trade bitcoin, just six are billionaires, Henley & Partners found.</li>\n<li>Meanwhile, 22 people worldwide ha… [+1504 chars]",
-  },
-  {
-    source: {
-      id: "business-insider",
-      name: "Business Insider",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Vietnam jails fifth climate activist in worrying trend",
+      description:
+        "Human rights groups say there is a worrying trend of activists being arrested on tax evasion charges.",
+      url: "http://www.bbc.co.uk/news/world-asia-66940762",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/40DF/production/_131270661_hongthminhhng2017-fromfbhh.jpg",
+      publishedAt: "2023-09-28T07:37:18.4641409Z",
+      content:
+        "One of Vietnam's best-known climate activists has been sentenced to three years in prison over tax evasion. \r\nHoang Thi Minh Hong is the fifth Vietnamese activist to be jailed over the charge. \r\nCamp… [+6079 chars]",
     },
-    author: "Matthew Fox",
-    title:
-      "Bitcoin could drop to the $20,000 range if a key price level is breached",
-    description:
-      '"We remain long-term neutral, but we are wary of negative catalysts that could develop from a bigger retracement," Katie Stockton said.',
-    url: "https://markets.businessinsider.com/news/currencies/bitcoin-price-outlook-broken-support-20000-range-technical-analysis-2023-8",
-    urlToImage:
-      "https://i.insider.com/64e62a424c17ff0019bb16bc?width=1200&format=jpeg",
-    publishedAt: "2023-08-23T16:42:26Z",
-    content:
-      "Wenjin Chen/Getty Images\r\n<ul><li>Bitcoin is testing a key support level that, if broken, could send the cryptocurrency back to the $20,000 range.</li><li>That's according to Fairlead Strategies' Kat… [+2149 chars]",
-  },
-  {
-    source: {
-      id: "business-insider",
-      name: "Business Insider",
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Evergrande shares halted as pressure mounts on firm",
+      description:
+        "The stricken Chinese property giant suspends shares as reports emerge of its chairman being taken.",
+      url: "http://www.bbc.co.uk/news/business-66932548",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/130DF/production/_131274087_gettyimages-1342296605.jpg",
+      publishedAt: "2023-09-28T07:37:18.198582Z",
+      content:
+        "Shares in crisis-hit Chinese property giant Evergrande have been suspended in Hong Kong amid reports its chairman has been placed under police surveillance.\r\nIt follows reports earlier this week that… [+2758 chars]",
     },
-    author: "Zahra Tayeb",
-    title:
-      "Cathie Wood's ARK and 21Shares plan America's first ether ETF as race to open spot bitcoin funds heats up",
-    description:
-      "The joint SEC filing comes as the race to launch the first exchange-traded fund backed by bitcoin gathers pace.",
-    url: "https://markets.businessinsider.com/news/etf/cathie-wood-ark-21shares-file-first-ether-etf-bitcoin-race-2023-9",
-    urlToImage:
-      "https://i.insider.com/633c32e96427060019ef2f65?width=1200&format=jpeg",
-    publishedAt: "2023-09-07T10:33:27Z",
-    content:
-      "Cathie Wood controls ARK.Rebecca Blackwell/AP\r\n<ul>\n<li>Cathie Wood's Ark fund and 21Shares are planning America's first spot ether ETF. </li>\n<li>They filed an SEC application Wednesday as a race to… [+1827 chars]",
-  },
-];
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "NFL's Travis Kelce breaks silence on 'amazing' Taylor Swift",
+      description:
+        'The sports star says his rumoured love interest\'s appearance at his game on Sunday was "awesome".',
+      url: "http://www.bbc.co.uk/news/world-us-canada-66940478",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/1095F/production/_131253976_taylor_swift_clip.jpg",
+      publishedAt: "2023-09-28T07:37:17.8549173Z",
+      content:
+        'NFL star Travis Kelce has lavished praise on his rumoured love interest, Taylor Swift, for her internet-breaking appearance at his game last Sunday. \r\n"Shout out to Taylor for showing up," Kelce, 33,… [+2863 chars]',
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Haikun: Taiwan unveils new submarine to fend off China",
+      description:
+        "Named after a mythical massive fish, the Haikun is Taiwan's first domestically made submarine.",
+      url: "http://www.bbc.co.uk/news/world-asia-66932808",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/92A1/production/_131273573_gettyimages-1694415331.jpg",
+      publishedAt: "2023-09-28T07:37:16.9801354Z",
+      content:
+        "Media caption, Watch: Taiwan unveils first domestically-built submarine\r\nTaiwan has unveiled its first domestically-made submarine as it bolsters its defences against a possible Chinese attack.\r\nPres… [+6412 chars]",
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "BBC helps free suspected migrants stuck in refrigerated lorry",
+      description:
+        "A woman spoke to us from inside the lorry in France, saying she was struggling to breathe.",
+      url: "http://www.bbc.co.uk/news/world-asia-66943779",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/46D9/production/_131273181_pic.jpg",
+      publishedAt: "2023-09-28T04:52:20.3556542Z",
+      content:
+        "Six suspected migrants have been rescued from the back of a lorry in France, after the BBC helped track them down and alert the police.\r\nThe four Vietnamese women and two Iraqi women were trapped ins… [+5307 chars]",
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Vietnam jails fifth climate activist in worrying trend",
+      description:
+        "Human rights groups say there is a worrying trend of activists being arrested on tax evasion charges.",
+      url: "http://www.bbc.co.uk/news/world-asia-66940762",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/40DF/production/_131270661_hongthminhhng2017-fromfbhh.jpg",
+      publishedAt: "2023-09-28T07:37:18.4641409Z",
+      content:
+        "One of Vietnam's best-known climate activists has been sentenced to three years in prison over tax evasion. \r\nHoang Thi Minh Hong is the fifth Vietnamese activist to be jailed over the charge. \r\nCamp… [+6079 chars]",
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Evergrande shares halted as pressure mounts on firm",
+      description:
+        "The stricken Chinese property giant suspends shares as reports emerge of its chairman being taken.",
+      url: "http://www.bbc.co.uk/news/business-66932548",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/130DF/production/_131274087_gettyimages-1342296605.jpg",
+      publishedAt: "2023-09-28T07:37:18.198582Z",
+      content:
+        "Shares in crisis-hit Chinese property giant Evergrande have been suspended in Hong Kong amid reports its chairman has been placed under police surveillance.\r\nIt follows reports earlier this week that… [+2758 chars]",
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "NFL's Travis Kelce breaks silence on 'amazing' Taylor Swift",
+      description:
+        'The sports star says his rumoured love interest\'s appearance at his game on Sunday was "awesome".',
+      url: "http://www.bbc.co.uk/news/world-us-canada-66940478",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/1095F/production/_131253976_taylor_swift_clip.jpg",
+      publishedAt: "2023-09-28T07:37:17.8549173Z",
+      content:
+        'NFL star Travis Kelce has lavished praise on his rumoured love interest, Taylor Swift, for her internet-breaking appearance at his game last Sunday. \r\n"Shout out to Taylor for showing up," Kelce, 33,… [+2863 chars]',
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "Haikun: Taiwan unveils new submarine to fend off China",
+      description:
+        "Named after a mythical massive fish, the Haikun is Taiwan's first domestically made submarine.",
+      url: "http://www.bbc.co.uk/news/world-asia-66932808",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/92A1/production/_131273573_gettyimages-1694415331.jpg",
+      publishedAt: "2023-09-28T07:37:16.9801354Z",
+      content:
+        "Media caption, Watch: Taiwan unveils first domestically-built submarine\r\nTaiwan has unveiled its first domestically-made submarine as it bolsters its defences against a possible Chinese attack.\r\nPres… [+6412 chars]",
+    },
+    {
+      source: {
+        id: "bbc-news",
+        name: "BBC News",
+      },
+      author: "BBC News",
+      title: "BBC helps free suspected migrants stuck in refrigerated lorry",
+      description:
+        "A woman spoke to us from inside the lorry in France, saying she was struggling to breathe.",
+      url: "http://www.bbc.co.uk/news/world-asia-66943779",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/46D9/production/_131273181_pic.jpg",
+      publishedAt: "2023-09-28T04:52:20.3556542Z",
+      content:
+        "Six suspected migrants have been rescued from the back of a lorry in France, after the BBC helped track them down and alert the police.\r\nThe four Vietnamese women and two Iraqi women were trapped ins… [+5307 chars]",
+    },
+  ],
+};
