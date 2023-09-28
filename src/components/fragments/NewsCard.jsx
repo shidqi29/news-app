@@ -28,7 +28,7 @@ const NewsCard = ({ news }) => {
       <div className="card-compact card card-bordered h-[480px] w-80 bg-base-300 shadow-md shadow-black">
         <figure className="h-40 w-full bg-current">
           <img
-            src={news.urlToImage}
+            src={news.urlToImage ? news.urlToImage : "https://via.placeholder.com/300"}
             alt={news.title}
             className="h-full w-full"
           />
@@ -37,7 +37,7 @@ const NewsCard = ({ news }) => {
           <div className="flex gap-4 text-xs">
             <div className="flex items-center gap-1">
               <PiUser size={18} />
-              <p>{news.author}</p>
+              <p>{news.source.name}</p>
             </div>
             <div className="flex items-center gap-1">
               <PiCalendarBlankDuotone size={18} />
@@ -50,7 +50,7 @@ const NewsCard = ({ news }) => {
             </Link>
           </h2>
           <p>
-            {news.description.slice(0, 100)} {"..."}
+            {news.description ? news.description.slice(0, 100) + "..." : "Description not found"}
           </p>
           <div className="divider mb-0"></div>
           <div className="card-actions items-center justify-between px-2">
