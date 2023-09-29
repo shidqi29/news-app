@@ -57,6 +57,7 @@ const NewsCard = ({ news }) => {
             <button
               onClick={handleBookmark}
               className="btn btn-ghost btn-sm p-0"
+              type="button"
             >
               {isNewsSaved(news) ? (
                 <PiBookmarkSimpleFill size={28} />
@@ -68,6 +69,7 @@ const NewsCard = ({ news }) => {
               target="_blank"
               to={news.url}
               className="btn btn-outline btn-sm"
+              type="button"
             >
               Read More
               <PiArrowRight size={18} />

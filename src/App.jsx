@@ -5,6 +5,7 @@ import Programming from "./pages/Programming";
 import Health from "./pages/Health";
 import SavedNews from "./pages/SavedNews";
 import Search from "./pages/Search";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
               <Route path=":query" element={<Search />} />
             </Route>
             <Route path="/saved" element={<SavedNews />} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </Router>
