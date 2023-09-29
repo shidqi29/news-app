@@ -22,4 +22,5 @@ export const apiUrl = {
   indonesia: `${baseUrl}/top-headlines?country=id&pageSize=${pageSize}&apiKey=${apiKey2}`,
   programming: `${baseUrl}/everything?q=programming&pageSize=${pageSize}&apiKey=${apiKey2}`,
   health: `${baseUrl}/everything?q=health&pageSize=${pageSize}&apiKey=${apiKey2}`,
+  search: `${baseUrl}/everything?pageSize=${pageSize}&apiKey=${apiKey2}`,
 };

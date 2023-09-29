@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Programming from "./pages/Programming";
 import Health from "./pages/Health";
 import SavedNews from "./pages/SavedNews";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/programming" element={<Programming />} />
             <Route path="/health" element={<Health />} />
+            <Route path="/search" element={<Search />}>
+              <Route path=":query" element={<Search />} />
+            </Route>
             <Route path="/saved" element={<SavedNews />} />
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>

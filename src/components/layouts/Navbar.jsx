@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   PiBookmarksSimpleBold,
   PiBookmarksSimpleFill,
@@ -16,6 +16,14 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const savedNews = useSelector((state) => state.news.data.saved);
+  const [query, setQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    query && navigate(`/search/${query}`);
+    setQuery("");
+  };
 
   const isActive = ({ isActive }) => {
     return isActive
@@ -70,19 +78,24 @@ const Navbar = () => {
             </div>
             <div className="flex-none gap-4">
               <div className="hidden sm:flex">
-                <form>
+                <form onSubmit={handleSearch}>
                   <div className="join">
                     <input
                       className="input join-item input-bordered input-sm hidden rounded-full focus:outline-none lg:block"
                       placeholder="Search news ..."
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button className="btn btn-neutral join-item btn-sm hidden rounded-r-full lg:block">
+                    <button
+                      className="btn btn-neutral join-item btn-sm hidden rounded-r-full lg:block"
+                      type="submit"
+                    >
                       <PiMagnifyingGlassBold size={28} />
                     </button>
                   </div>
                 </form>
               </div>
-              <label className="swap swap-rotate">
+              <label className="swap-rotate swap">
                 <input type="checkbox" />
                 <div
                   className="swap-on w-7 fill-current"
@@ -132,13 +145,18 @@ const Navbar = () => {
             {/* Sidebar content here */}
             <div>
               <div className="my-2 flex flex-col items-center gap-2">
-                <form>
+                <form onSubmit={handleSearch}>
                   <div className="join">
                     <input
                       className="input join-item input-bordered rounded-full focus:outline-none "
                       placeholder="Search news ..."
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button className="btn btn-neutral join-item rounded-r-full">
+                    <button
+                      className="btn btn-neutral join-item rounded-r-full"
+                      type="submit"
+                    >
                       <PiMagnifyingGlassBold size={28} />
                     </button>
                   </div>
