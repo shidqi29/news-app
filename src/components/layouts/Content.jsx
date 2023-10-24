@@ -39,8 +39,7 @@ const Content = ({ fetchUrl, category }) => {
           <NewsCard news={item} key={index} />
         ))}
       </section>
-      <div className="divider"></div>
-      <div className="join grid grid-cols-3">
+      <div className="join grid grid-cols-3 mt-10">
         <button
           onClick={() => setPage((old) => Math.max(old - 1, 0))}
           disabled={page === 1}
